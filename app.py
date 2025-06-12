@@ -229,36 +229,36 @@ def setup_sidebar():
             "Groq API Key", 
             type="password", 
             help="Required for LLM operations",
-            value=os.getenv('GROQ_API_KEY', '')
+            value=st.secrets['GROQ_API_KEY']
         )
         
         st.markdown("**Optional (for search):**")
         search_api_key = st.text_input(
             "SearchAPI Key", 
             type="password",
-            value=os.getenv('SEARCHAPI_KEY', '')
+            value=st.secrets['SEARCHAPI_KEY']
         )
         
         google_api_key = st.text_input(
             "Google API Key", 
             type="password",
-            value=os.getenv('GOOGLE_API_KEY', '')
+            value=st.secrets['GOOGLE_API_KEY']
         )
         
         google_cse_id = st.text_input(
             "Google CSE ID",
-            value=os.getenv('GOOGLE_CSE_ID', '')
+            value=st.secrets['GOOGLE_CSE_ID']
         )
         
         # Set environment variables if provided
         if groq_key:
-            os.environ['GROQ_API_KEY'] = groq_key
+            st.secrets['GROQ_API_KEY'] = groq_key
         if search_api_key:
-            os.environ['SEARCHAPI_KEY'] = search_api_key
+            st.secrets['SEARCHAPI_KEY'] = search_api_key
         if google_api_key:
-            os.environ['GOOGLE_API_KEY'] = google_api_key
+            st.secrets['GOOGLE_API_KEY'] = google_api_key
         if google_cse_id:
-            os.environ['GOOGLE_CSE_ID'] = google_cse_id
+            st.secrets['GOOGLE_CSE_ID'] = google_cse_id
     
     # Settings Section
     with st.sidebar.expander("🎛️ Settings", expanded=True):

@@ -9,9 +9,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 from langchain.schema import Document
 import json
-
-# Load environment variables
-load_dotenv()
+import streamlit as st
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
