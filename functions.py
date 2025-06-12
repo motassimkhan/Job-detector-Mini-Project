@@ -644,18 +644,18 @@ class UnifiedVerificationService:
 # ============================================================================
 
 def setup_environment() -> bool:
-    """Check if required environment variables are set"""
-    required_vars = ['GROQ_API_KEY']
-    optional_vars = ['SEARCHAPI_KEY', 'GOOGLE_API_KEY', 'GOOGLE_CSE_ID']
+    # """Check if required environment variables are set"""
+    # required_vars = ['GROQ_API_KEY']
+    # optional_vars = ['SEARCHAPI_KEY', 'GOOGLE_API_KEY', 'GOOGLE_CSE_ID']
     
-    missing_required = [var for var in required_vars if not st.secrets[var]]
-    if missing_required:
-        logger.error(f"Missing required environment variables: {missing_required}")
-        return False
+    # missing_required = [var for var in required_vars if not st.secrets[var]]
+    # if missing_required:
+    #     logger.error(f"Missing required environment variables: {missing_required}")
+    #     return False
     
-    missing_optional = [var for var in optional_vars if not st.secrets[var]]
-    if missing_optional:
-        logger.warning(f"Missing optional environment variables: {missing_optional}")
+    # missing_optional = [var for var in optional_vars if not st.secrets[var]]
+    # if missing_optional:
+    #     logger.warning(f"Missing optional environment variables: {missing_optional}")
     
     return True
 
