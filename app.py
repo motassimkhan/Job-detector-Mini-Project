@@ -88,7 +88,7 @@ st.markdown("""
     }
 
     .company-info {
-        background-color: #000000; /* soft blue */
+        background-color: linear-gradient(135deg, #7b2ff7 0%, #f107a3 100%); /* soft blue */
         padding: 1.5rem;
         border-radius: 10px;
         border: 1px solid #aed6f1;
@@ -231,7 +231,7 @@ def create_verification_chart():
 
 def setup_sidebar():
     """Setup sidebar with API configuration and settings"""
-    st.sidebar.header("⚙️ Configuration")
+    st.sidebar.header("He There 👋 ")
     
     # API Keys Section
     with st.sidebar.expander("🔑 API Keys", expanded=False):
