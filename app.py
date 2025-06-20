@@ -88,7 +88,7 @@ st.markdown("""
     }
 
     .company-info {
-        background-color: linear-gradient(135deg, #7b2ff7 0%, #f107a3 100%); /* soft blue */
+        background-color: #ffffff;
         padding: 1.5rem;
         border-radius: 10px;
         border: 1px solid #aed6f1;
