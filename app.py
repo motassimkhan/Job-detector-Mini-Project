@@ -88,7 +88,7 @@ st.markdown("""
     }
 
     .company-info {
-        background-color: #ebf5fb; /* soft blue */
+        background-color: #000000; /* soft blue */
         padding: 1.5rem;
         border-radius: 10px;
         border: 1px solid #aed6f1;
@@ -110,7 +110,7 @@ st.markdown("""
         padding: 1rem;
         border-radius: 8px;
         margin: 1rem 0;
-        color: #1b5e20;
+        color: #000000;
     }
 </style>
 """, unsafe_allow_html=True)
