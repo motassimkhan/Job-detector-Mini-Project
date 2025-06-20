@@ -33,11 +33,11 @@ st.set_page_config(
 st.markdown("""
 <style>
  body {
-        background: linear-gradient(to right, #ff9966, #ff5e62);
-        color: white;
+        background: linear-gradient(135deg, #7b2ff7 0%, #f107a3 100%);
+        color: #f0f0f0;
     }
     .stApp {
-        background: linear-gradient(to right, #ff9966, #ff5e62);
+        background: linear-gradient(135deg, #7b2ff7 0%, #f107a3 100%);
     }
     .main-header {
         font-size: 3rem;
