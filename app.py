@@ -23,87 +23,98 @@ except ImportError:
 # page configuration
 
 st.set_page_config(
-    page_title="Job Post Verification Center",
+    page_title="Job Verification Service",
     page_icon="🔍",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 
 # custom css styling
 
 st.markdown("""
 <style>
+ body {
+        background: linear-gradient(to right, #ff9966, #ff5e62);
+        color: white;
+    }
+    .stApp {
+        background: linear-gradient(to right, #ff9966, #ff5e62);
+    }
     .main-header {
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        color: #1f77b4;
+        color: #2c3e50; /* dark blue-gray */
         margin-bottom: 2rem;
     }
-    
+
     .sub-header {
         font-size: 1.5rem;
         font-weight: 600;
-        color: #333;
+        color: #2d3436; /* dark grey */
         margin: 1rem 0;
     }
-    
+
     .status-box {
         padding: 1rem;
         border-radius: 10px;
         margin: 1rem 0;
         border-left: 5px solid;
     }
-    
+
     .status-real {
-        background-color: #d4edda;
-        border-color: #28a745;
-        color: #155724;
+        background-color: #e6f4ea; /* soft green */
+        border-color: #2e7d32;     /* dark green */
+        color: #1b5e20;
     }
-    
+
     .status-fake {
-        background-color: #f8d7da;
-        border-color: #dc3545;
-        color: #721c24;
+        background-color: #fdecea; /* soft red */
+        border-color: #c62828;     /* dark red */
+        color: #b71c1c;
     }
-    
+
     .status-unknown {
-        background-color: #fff3cd;
-        border-color: #ffc107;
-        color: #856404;
+        background-color: #fff9e6; /* light yellow */
+        border-color: #f9a825;     /* dark yellow */
+        color: #795548;
     }
-    
+
     .metric-container {
-        background-color: #f8f9fa;
+        background-color: #f5f5f5;
         padding: 1rem;
         border-radius: 10px;
         margin: 0.5rem 0;
+        color: #212121;
     }
-    
+
     .company-info {
-        background-color: #e7f3ff;
+        background-color: #ebf5fb; /* soft blue */
         padding: 1.5rem;
         border-radius: 10px;
-        border: 1px solid #b3d9ff;
+        border: 1px solid #aed6f1;
+        color: #1b2631;
     }
-    
+
     .warning-box {
-        background-color: #fff3cd;
-        border: 1px solid #ffeaa7;
+        background-color: #fff9e6;
+        border: 1px solid #f7dc6f;
         padding: 1rem;
         border-radius: 8px;
         margin: 1rem 0;
+        color: #6d4c41;
     }
-    
+
     .success-box {
-        background-color: #d4edda;
-        border: 1px solid #c3e6cb;
+        background-color: #e6f4ea;
+        border: 1px solid #a5d6a7;
         padding: 1rem;
         border-radius: 8px;
         margin: 1rem 0;
+        color: #1b5e20;
     }
 </style>
 """, unsafe_allow_html=True)
+
 
 # utility functions
 
